@@ -22,10 +22,7 @@ $(document).ready(function() {
         $('body').css('overflow', 'auto'); 
         searchInput.val(''); 
     }
-
-
     closeBtn.on('click', closeSearchPopup);
-
     overlay.on('click', closeSearchPopup);
 
     // $(document).on('keyup', function(e) {
