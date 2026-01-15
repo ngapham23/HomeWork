@@ -1,0 +1,33 @@
+
+.aps-cards-inner.slick-initialized {
+    display: flex !important;
+}
+
+.aps-cards-inner.slick-initialized .slick-list {
+    overflow: visible !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.aps-cards-inner.slick-initialized .slick-track {
+    display: flex !important;
+    gap: 30px !important; 
+    transform-style: preserve-3d !important;
+}
+
+.aps-cards-inner.slick-initialized .slick-slide {
+    width: auto !important; 
+    margin: 0 !important; 
+    float: none !important; 
+}
+
+
+.aps-cards-inner.slick-initialized .aps_card {
+    width: 410px !important;
+    height: 525px !important;
+    border-radius: var(--radius-sm) !important;
+    box-shadow: var(--shadow-sm) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    flex-shrink: 0 !important;
+    margin: 0 !important; 
+}
