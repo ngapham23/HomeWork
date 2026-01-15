@@ -28,28 +28,28 @@ $(document).ready(function() {
 
     overlay.on('click', closeSearchPopup);
 
-    $(document).on('keyup', function(e) {
-        if (e.which === 27 && searchPopup.hasClass('active')) {
-            closeSearchPopup();
-        }
-    });
+    // $(document).on('keyup', function(e) {
+    //     if (e.which === 27 && searchPopup.hasClass('active')) {
+    //         closeSearchPopup();
+    //     }
+    // });
 
 
-    $('.aps-search-popup__form').on('submit', function(e) {
-        e.preventDefault();
-        const query = searchInput.val().trim();
+    // $('.aps-search-popup__form').on('submit', function(e) {
+    //     e.preventDefault();
+    //     const query = searchInput.val().trim();
         
-        if (query.length > 0) {
-            console.log('Searching for:', query);
+    //     if (query.length > 0) {
+    //         console.log('Searching for:', query);
 
-            alert('Searching for: ' + query);
-        } else {
-            searchInput.focus();
-        }
-    });
+    //         alert('Searching for: ' + query);
+    //     } else {
+    //         searchInput.focus();
+    //     }
+    // });
 
-       $('.aps-search-tag').on('click', function() {
-        const tagText = $(this).text();
-        searchInput.val(tagText).focus();
-    });
+    //    $('.aps-search-tag').on('click', function() {
+    //     const tagText = $(this).text();
+    //     searchInput.val(tagText).focus();
+    // });
 });
